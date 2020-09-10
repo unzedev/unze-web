@@ -1,5 +1,8 @@
 # unze-web
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b0b90470-498c-4a6b-a59d-7cb12c2e35c7/deploy-status)](https://app.netlify.com/sites/unze/deploys)
+
+
 ## Project setup
 ```
 npm install
@@ -19,6 +22,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
