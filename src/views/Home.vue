@@ -29,7 +29,7 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/variables.scss';
 .hero {
-  background-image: url('../assets/rocket-bg-2.jpg');
+  background-image: url('../assets/rocket-bg.jpg');
   background-size: cover;
   background-position-y: 95%;
   .title {
