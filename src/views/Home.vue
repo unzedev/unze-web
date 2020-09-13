@@ -34,7 +34,7 @@ export default {
   background-position-y: 95%;
   border: 15px solid $primary;
   .title {
-    font-size: 7em;
+    font-size: 6.5em;
     color: $primary;
     text-shadow: 1px 1px 0px $link;
     margin-bottom: 0;
