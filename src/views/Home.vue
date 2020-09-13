@@ -4,7 +4,7 @@
       <div class="hero-body">
         <div class="container">
           <div class="columns">
-            <div class="column is-6 has-text-centered">
+            <div class="column is-12">
               <p class="subtitle">Agência Digital</p>
               <h1 class="title">unze</h1>
               <br>
@@ -32,10 +32,12 @@ export default {
   background-image: url('../assets/rocket-bg.jpg');
   background-size: cover;
   background-position-y: 95%;
+  border: 15px solid $primary;
   .title {
-    font-size: 8em;
+    font-size: 7em;
     color: $primary;
-    text-shadow: 3px 3px 0 $link;
+    text-shadow: 1px 1px 0px $link;
+    margin-bottom: 0;
   }
   .subtitle {
     color: hsl(215, 22%, 95%);
