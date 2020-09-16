@@ -36,11 +36,13 @@ export default {
   .title {
     font-size: 6.5em;
     color: $primary;
-    text-shadow: 1px 1px 0px $link;
+    text-shadow: 3px 3px 0px $link;
     margin-bottom: 0;
+    font-weight: normal;
   }
   .subtitle {
     color: hsl(215, 22%, 95%);
+    margin-bottom: -20px;
   }
   p, a {
     color: hsl(215, 22%, 95%);
