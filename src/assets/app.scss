@@ -6,10 +6,35 @@
   font-family: 'Kumbh Sans', sans-serif;
 }
 
+body {
+  font-size: 18px;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
 .title {
-  font-family: 'Knewave', cursive;
+  letter-spacing: 1px;
+  font-weight: 700;
 }
 
 a {
   font-weight: bold;
+}
+
+.logo {
+  font-family: 'Knewave', cursive;
+  font-size: 4.5em;
+  color: $primary;
+  text-shadow: 3px 3px 0px $link;
+  font-weight: normal;
+  line-height: 0.7;
+  letter-spacing: 2px;
+}
+
+@media(max-width: 768px) {
+  .reverse-columns {
+    flex-direction: column-reverse;
+    display: flex;
+  }
 }

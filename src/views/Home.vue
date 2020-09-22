@@ -1,51 +1,189 @@
 <template>
+<!-- eslint-disable max-len -->
   <div class="home">
-    <section class="hero is-fullheight">
+    <section class="hero is-medium main-hero">
       <div class="hero-body">
         <div class="container">
-          <div class="columns">
-            <div class="column is-12">
-              <p class="subtitle">Agência Digital</p>
-              <h1 class="title">unze</h1>
-              <br>
+          <div class="logo" aria-describedby="Unze">unze</div>
+          <div class="columns is-vcentered">
+            <div class="column is-6">
+              <p class="title">
+                Criamos<br>
+                {{ texts[textIndex] }}<br>
+                incríveis
+              </p>
+            </div>
+            <div class="column">
+              <img src="../assets/i2.svg"
+                draggable="false"
+                aria-hidden="true"
+                alt=" ">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section is-large cases-section is-relative">
+      <div class="custom-shape-divider-top">
+        <svg aria-hidden="true" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path fill="#C6F1E7" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+          <path fill="#C6F1E7" d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+          <path fill="#C6F1E7" d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-12">
+            <h2 class="title is-1">Cases</h2>
+            <p class="subtitle">Conheça um pouco do nosso trabalho.</p>
+            <br><br><br>
+            <div class="columns reverse-columns is-vcentered">
+              <div class="column">
+                <img src="../assets/genial.png"
+                  draggable="false"
+                  alt="Telas do website Genial Convenções">
+              </div>
+              <div class="column is-5">
+                <h3 class="title is-3">Genial Convenções</h3>
+                <p class="subtitle">Sistema e website</p>
+                <p>
+                  Convenções partidárias costumavam ser realizadas presencialmente.
+                  Com a criação desta plataforma, conseguimos trazer esta realidade para
+                  o mundo digital, possibilitando a realização das convenções, de maneira segura,
+                  durante a pandemia de 2020.
+                </p>
+              </div>
+            </div>
+            <br><br><br>
+            <div class="columns is-vcentered">
+              <div class="column is-5">
+                <h3 class="title is-3">Sem Barreiras</h3>
+                <p class="subtitle">Sistema e website</p>
+                <p>
+                  Uma plataforma altamente acessível criada com o objetivo de
+                  ligar estabelecimentos acessíveis a pessoas com deficiência
+                  da maneira mais fácil possível.
+                </p>
+              </div>
+              <div class="column">
+                <img src="../assets/sembarreiras.png"
+                  draggable="false"
+                  alt="Telas do website Sem Barreiras">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section is-large who-section is-relative">
+      <div class="custom-shape-divider-top">
+        <svg aria-hidden="true" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path fill="#fa4659" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+          <path fill="#fa4659" d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+          <path fill="#fa4659" d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-6">
+            <h2 class="title is-1">Quem somos</h2>
+            <p class="subtitle">Entenda o que é a Unze.</p>
+            <div class="content">
               <p>
-                Entre em contato e faça sua empresa decolar:
-                 <a href="mailto:hildorjunior@gmail.com">hildorjunior@gmail.com</a>
+                A Unze é uma agência digital que tem como propósito auxiliar empresas no seu
+                crescimento, especializada em transformação digital e desenvolvimento
+                de websites.
+              </p>
+              <p>
+                Nossas raízes estão em Porto Alegre, no Rio Grande do Sul, mas nossa
+                equipe atende clientes no mundo todo. Somos especialistas em desenvolvimento
+                de websites, aplicativos, plataformas, marcas e identidades visuais.
+              </p>
+              <p>
+                Valorizamos pessoas e as relações com nossos clientes. Nosso objetivo é sempre
+                entregar o melhor possível e garantir a satisfação de quem acredita na gente.
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <footer class="footer has-text-centered">
+      <p>
+        Entre em contato: <a href="mailto:oi@unze.com.br">oi@unze.com.br</a>
+      </p>
+      <div class="logo" aria-describedby="Unze">unze</div>
+    </footer>
   </div>
 </template>
 
 <script>
 export default {
   name: 'Home',
+  data() {
+    return {
+      textIndex: 0,
+      texts: [
+        'experiências',
+        'marcas',
+        'websites',
+        'plataformas',
+        'apps',
+      ],
+    };
+  },
+  methods: {
+    iterateThroughTexts() {
+      setInterval(() => {
+        this.textIndex = this.texts.length === this.textIndex + 1 ? 0 : this.textIndex + 1;
+      }, 3000);
+    },
+  },
+  mounted() {
+    this.iterateThroughTexts();
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 @import '../assets/variables.scss';
-.hero {
-  background-image: url('../assets/rocket-bg.jpg');
-  background-size: cover;
-  background-position-y: 95%;
-  border: 15px solid $primary;
+.custom-shape-divider-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.main-hero {
+  background: $c4;
   .title {
-    font-size: 6.5em;
-    color: $primary;
-    text-shadow: 3px 3px 0px $link;
-    margin-bottom: 0;
-    font-weight: normal;
+    color: $c2;
+    // text-shadow: 3px 3px 0px $c1;
+    font-size: 5em;
+    @media screen and (max-width: 768px) {
+      font-size: 2.5em;
+      margin-top: 50px;
+    }
   }
-  .subtitle {
-    color: hsl(215, 22%, 95%);
-    margin-bottom: -20px;
+  .subtitle, p, a {
+    color: $c2;
   }
-  p, a {
-    color: hsl(215, 22%, 95%);
+}
+
+.cases-section {
+  background: $c2;
+  .subtitle, p, .title {
+    color: white;
   }
+  .title.is-3 {
+    border-bottom: 2px dashed $c1;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+}
+
+.who-section {
+  background: $c4;
 }
 </style>
