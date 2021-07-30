@@ -112,7 +112,10 @@
       <p>
         Entre em contato: <a href="mailto:oi@unze.com.br">oi@unze.com.br</a>
       </p>
-      <div class="logo" aria-describedby="Unze">unze</div>
+      <div class="logo" aria-describedby="Unze" style="margin-bottom: 40px;">unze</div>
+      <p>
+        © 2021 Unze Tecnologia LTDA - CNPJ 41.074.294/0001-83
+      </p>
     </footer>
   </div>
 </template>
