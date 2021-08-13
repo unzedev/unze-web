@@ -110,7 +110,10 @@
     </section>
     <footer class="footer has-text-centered">
       <p>
-        Entre em contato: <a href="mailto:oi@unze.com.br">oi@unze.com.br</a>
+        E-mail: <a href="mailto:oi@unze.com.br">oi@unze.com.br</a>
+      </p>
+      <p>
+        Whatsapp: <a target="_blank" href="https://wa.me/555133910852">(51) 3391 0852</a>
       </p>
       <div class="logo" aria-describedby="Unze" style="margin-bottom: 40px;">unze</div>
       <p>
