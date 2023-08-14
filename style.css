@@ -2,14 +2,10 @@
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
 
 :root {
-    --primary: #11CBD7;
-    --link: #fa4659;
-    --c1: #ff757c;
-    --c2: #fa4759;
-    --c3: #e9f7ec;
-    --c4: #c6f1e7;
-    --c5: #11c7d4;
-    --c6: #55ebf6;
+    --primary: #1958af;
+    --link: #001c13;
+    --light: #e3eeff;
+    --dark: #11294b;
 }
 
 * {
@@ -35,12 +31,30 @@ a {
     font-weight: bold;
 }
 
+
+.main-hero * {
+    color: var(--dark);
+}
+
+.logo-section * {
+    color: var(--light);
+}
+
+.logo-section a {
+    color: var(--light);
+    opacity: 0.7;
+    transition: .2s;
+}
+
+.logo-section a:hover {
+    opacity: 1;
+}
+
 .logo {
     font-family: 'Knewave', cursive;
     font-size: 4.5em;
-    color: var(--primary);
-    text-shadow: 3px 3px 0px var(--link);
-    font-weight: normal;
+    position: relative;
+    left: 5px;
     letter-spacing: 2px;
 }
 
@@ -61,12 +75,12 @@ a {
 }
 
 .main-hero {
-    background: var(--c4);
+    background: var(--dark);
 }
 
 .main-hero .title {
-    color: var(--c2);
-    font-size: 5em;
+    color: var(--light);
+    font-size: 4em;
 }
 
 @media screen and (max-width: 768px) {
@@ -76,32 +90,53 @@ a {
     }
 }
 
-.main-hero .subtitle,
-.main-hero p,
-.main-hero a {
-    color: var(--c2);
-}
-
 .cases-section {
-    background: var(--c2);
+    background: var(--light);
 }
 
-.cases-section .subtitle,
-.cases-section p,
-.cases-section .title {
-    color: white;
+.cases-section * {
+    color: var(--dark);
+}
+
+.cases-section .case {
+    margin-top: 120px;
+}
+
+
+.cases-section path {
+    fill: var(--dark);
 }
 
 .cases-section .title.is-3 {
-    border-bottom: 2px dashed var(--c1);
-    padding-bottom: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .who-section {
-    background: var(--c4);
+    background: var(--dark);
 }
 
-a {
-    color: var(--link);
+.who-section * {
+    color: var(--light);
+}
+
+.who-section path {
+    fill: var(--light);
+}
+
+.footer {
+    background: var(--light);
+}
+
+.footer .logo {
+    color: var(--dark);
+}
+
+.footer a {
+    color: var(--dark);
+    transition: .2s;
+    opacity: .7;
+}
+
+.footer a:hover {
+    opacity: 1;
 }
